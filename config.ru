@@ -1,5 +1,4 @@
-use Rack::Static, :urls => ['/deck.js', '/images', '/js', '/css'],
-                  :root => '.'
+use Rack::Static, :urls => ['/images'], :root => '.'
 
 app = lambda do |env|
   [
