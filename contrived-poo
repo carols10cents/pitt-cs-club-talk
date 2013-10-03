@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+ruby globe.rb | tee globe2.rb
+ruby globe2.rb | tee globe3.rb
+ruby globe3.rb | tee globe4.rb
+ruby globe4.rb | tee globe5.rb
+ruby globe5.rb | tee globe6.rb
+ruby globe6.rb | tee globe7.rb
+ruby globe7.rb
+rm globe[2-7].rb

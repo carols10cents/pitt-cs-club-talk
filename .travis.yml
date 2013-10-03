@@ -1,6 +1,7 @@
 language: ruby
 rvm:
 - 2.0.0
+script: ./contrived-poo
 deploy:
   provider: heroku
   skip_cleanup: true
