@@ -1,9 +1,77 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My life with Travis CI</title>
+    <title>Life with Travis CI</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <style type='text/css'>
+      body {
+        font-family: 'Helvetica';
+        letter-spacing: -5px;
+        background: #000;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+      }
+
+      h1, h2, h3, p {
+        margin: 0;
+      }
+
+      em, a {
+        font-style: normal;
+        color: #8dbd0c;
+      }
+
+      a {
+        color: #34d0e7;
+        text-decoration: none;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      div {
+        cursor: pointer;
+        cursor: hand;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      code {
+        color: #5afa5a;
+        font-family: 'Menlo', 'Consolas', monospace;
+      }
+
+      .green {
+        color: #22ae55;
+      }
+
+      .blue {
+        color: #2255ae;
+      }
+
+      .red {
+        color: #ae5522;
+      }
+
+      .black {
+        color: #0a0a0a;
+      }
+
+      .smaller {
+        font-size: 0.4em;
+      }
+
+      .shhh {
+        opacity: 0.3;
+      }
+    </style>
     <script type='text/javascript'>
       window.onload = function() {
           var s = document.getElementsByTagName('div'), cur = 0;
@@ -52,84 +120,34 @@
           go(cur);
       };
     </script>
-    <style type='text/css'>
-      body {
-        font-family: 'Helvetica';
-        letter-spacing: -5px;
-        background: #000;
-        background-size: 100%;
-        color: #fff;
-        margin: 0;
-        padding: 0;
-        font-weight: bold;
-      }
-
-      h1, h2, h3, p {
-        margin: 0;
-      }
-
-      em, a {
-        font-style: normal;
-        color: #8dbd0c;
-      }
-
-      a {
-        color: #34d0e7;
-        text-decoration: none;
-      }
-
-      img {
-        width: 100%;
-      }
-
-      div {
-        cursor: pointer;
-        cursor: hand;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-
-      .green {
-        color: #22ae55;
-      }
-
-      .blue {
-        color: #2255ae;
-      }
-
-      .red {
-        color: #ae5522;
-      }
-
-      .black {
-        color: #111;
-      }
-
-      .smaller {
-        font-size: 0.4em;
-      }
-
-      .shhh {
-        opacity: 0.3;
-      }
-    </style>
   </head>
   <body>
-    <div>My Life with Travis<em class="smaller">@meatballhat</em></div>
+    <div>Life with Travis
+      <em class="smaller">@meatballhat</em>
+    </div>
 
     <div class="black">banana pants</div>
 
     <!-- INTRO -->
     <div>hi there</div>
-    <div><img src="images/hithere.png" alt="hi there"/></div> <!-- FIXME -->
+    <div><img src="images/hithere.png" alt="hi there"/></div>
     <div>my name is Dan</div>
     <div>I work at <a href="http://www.modcloth.com">ModCloth</a></div>
+    <div><img src="images/trustedby.png" alt="trusted by"/></div>
+    <div><img src="images/trustedby-focus.png" alt="trusted by with focus"/></div>
     <div class="red">we use Ruby</div>
     <div>
-      and Go, Node, Python, #!, Scala, Java
+      and Go, Node, Python, #!, Scala, Java, C#
       <p class="smaller shhh">and probably other crap</p>
     </div>
+    <div>I happen to <em>love Travis</em></div>
+    <div>so much so...</div>
+    <div>that I conviced my employer</div>
+    <div>to <em>give them money</em></div>
+
+    <div class="black">banana pants</div>
+
+    <!-- GOALS -->
     <div>goals for next <em>20 mins</em></div>
     <div>
       a brief review of the basics
@@ -144,18 +162,23 @@
       <p class="smaller red">serious business</p>
     </div>
     <div>
+      beyond CI
+      <p class="smaller blue">addons and the future</p>
+    </div>
+    <div>
       other resources
       <p class="smaller"><em>@rkh</em> was just at SCRC, ya know</p>
     </div>
     <div class="green">high five Carol</div>
+
     <div class="black">banana pants</div>
 
     <!-- BASICS -->
     <div>basics</div>
-    <div><img src="images/basics.png" alt="the basics"/></div> <!-- FIXME -->
+    <div><img src="images/basics.png" alt="the basics"/></div>
     <div>(plus opinions)</div>
+    <div>obligatory definition:</div>
     <div>Continuous Integration</div>
-
     <div>
       <a href="http://en.wikipedia.org/wiki/Continuous_integration">
         ...is the practice, in software engineering,
@@ -175,8 +198,8 @@
     <div class="black">banana pants</div>
 
     <div>what matters?</div>
-    <div><img src="images/happiness.png" alt="happiness"/></div> <!-- FIXME -->
-    <div>really, pain avoidance</div>
+    <div><img src="images/happiness.png" alt="happiness"/></div>
+    <div>well, pain avoidance</div>
 
     <div class="black">banana pants</div>
 
@@ -193,19 +216,115 @@
     <div class="black">banana pants</div>
 
     <div>stick together</div>
-    <div><img src="images/stick-together.png" alt="stick together"/></div> <!-- FIXME -->
-    <div>divergence == yikes!</div>
+    <div><img src="images/stick-together.png" alt="stick together"/></div>
+    <div class="red">divergence yikes!</div>
+
+    <div class="black">banana pants</div>
 
     <div>automate!</div>
-    <div>everything</div>
+    <div><em>everything</em></div>
     <div>really</div>
-    <div>at all levels</div>
+    <div>at <em>all levels</em></div>
+
+    <div class="black">banana pants</div>
+
+    <!-- HOW DO -->
+
+    <div>on Travis?</div>
+    <div>here's how</div>
+    <div><em>assumption:</em> existing git repo</div>
+    <div><em>assumption:</em> hosted on github</div>
+    <div><code>gem install travis</code></div>
+    <div><code>travis login</code></div>
+    <div><code>travis init</code></div>
+    <div><code>git add .travis.yml</code></div>
+    <div class="shhh">hack hack hack hack</div>
+    <div><code>git push</code></div>
+    <div><img src="images/travis-run.png" alt="a Travis run"/></div>
+
+    <div class="black">banana pants</div>
+
+    <div>what about...</div>
+    <div>legacy code?</div>
+    <div class="red">where to start?</div>
+    <div>take <em>small bites</em></div>
+    <div><code>bundle exec rake spec:views</code></div>
+    <div>
+      <a href="http://about.travis-ci.org/docs/user/speeding-up-the-build/#Parallelizing-your-builds-across-virtual-machines"
+        >parallellize</a>
+    </div>
+    <div>maybe even
+      <a href="http://about.travis-ci.org/docs/user/caching/">cache things</a>
+    </div>
+    <div>but, not too much</div>
+    <div>e.g.</div>
+    <div><img src="images/legacy-build.png" alt="Legacy build"/></div>
+
+    <div class="black">banana pants</div>
+
+    <!-- TRAVIS PRO -->
+    <div>Travis Pro</div>
+    <div>private repos</div>
+    <div>early access to <em>hotness</em></div>
+    <div>private chat support</div>
+    <div class="red">warm fuzzies</div>
+    <div><img src="images/360mullet.png" alt="360 degree mullet"/></div>
+
+    <div class="black">banana pants</div>
+
+    <!-- GOODIES -->
+    <div>goodies</div>
+    <div><img src="images/goodies.png" alt="oh boy goodies!"/></div>
+    <div>sauce labs</div>
+    <div>firefox</div>
+    <div>xvfb &amp; phantomjs</div>
+    <div>continuous deployment</div>
+    <div><a href="https://codeclimate.com/">CodeClimate</a> integration</div>
+
+    <div class="black">banana pants</div>
+
+    <!-- FUTURE -->
+    <div>the future</div>
+    <div><img src="images/future.png" alt="the futuuure"/></div>
+    <div>style refresh</div>
+    <div>build pipelining</div>
+    <div>JUnit &amp; TAP</div>
+    <div>beyond CI</div>
+    <div>
+      project health
+      <p class="smaller">better than <q>last activity</q></p>
+    </div>
+    <div>virtualization options</div>
+    <div>leveraging LXC</div>
+    <div>custom images for Pro customers</div>
+
+    <div class="black">banana pants</div>
+
+    <div>the Travis philosophy
+      <p class="smaller blue">a brief digression</p>
+    </div>
+    <div>(my interpretation)</div>
+    <div>core product <em>awesomeness</em></div>
+    <div>avoid mandatory customization</div>
+    <div class="red">avoid plugin hell</div>
+    <div>develop <em>in the open</em></div>
+    <div class="green">engage with the community</div>
+
+    <div class="black">banana pants</div>
+
+    <!-- OTHER RESOURCES -->
+    <div>more info</div>
+    <div>ALOT of <a href="http://about.travis-ci.org/docs/">docs</a></div>
+    <div>ALOT of <a href="http://www.youtube.com/results?search_query=travis+ci">videos</a></div>
+    <div>ALOT of <a href="http://www.slideshare.net/search/slideshow?q=travis+ci">slides</a></div>
+    <div>so. much.</div>
 
     <!-- FIN -->
     <div>high five Carol now</div>
-    <div><img src="images/done.png" alt="all done"/></div> <!-- FIXME -->
-    <div>talk to me
-      <p class="smaller blue">
+    <div><img src="images/done.png" alt="all done"/></div>
+    <div>
+      <p class="smaller">
+        <a href="https://github.com/meatballhat">github.com/meatballhat</a>
         <a href="mailto:dan@meatballhat.com">dan@meatballhat.com</a>
       </p>
     </div>
