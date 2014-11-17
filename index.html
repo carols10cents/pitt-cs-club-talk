@@ -87,7 +87,7 @@
               e.style.display = 'inline';
               e.style.fontSize = i + 'px';
               if (e.firstChild.nodeName === 'IMG') {
-                  document.body.style.backgroundImage = 'url(' + e.firstChild.src + ')';
+                  document.body.style.background = 'url(' + e.firstChild.src + ') no-repeat center center fixed';
                   e.firstChild.style.display = 'none';
               } else {
                   document.body.style.backgroundImage = '';
